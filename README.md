@@ -14,7 +14,7 @@ Designed and developed by **Muhammad Ahmed Ramzan**, this portfolio showcases sk
 
 ## 📸 Preview
 
-![Portfolio Banner](./project3.png)
+![Portfolio Banner/projects/project3.png)
 
 ## 📁 Project Structure
 
