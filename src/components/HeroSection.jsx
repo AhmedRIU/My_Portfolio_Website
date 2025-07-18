@@ -20,13 +20,16 @@ export const HeroSection = () => {
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
             I build modern websites that look great and work well. I focus on
             front-end design to make clean and easy-to-use interfaces.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="#projects" className="cosmic-button">
+            <a
+              href="#projects"
+              className="cosmic-button transform transition-transform duration-300 hover:-translate-y-1 hover:scale-105"
+            >
               View My Work
             </a>
           </div>
