@@ -28,7 +28,7 @@ const projects = [
       "Personal portfolio website showcasing projects with smooth navigation and responsive design.",
     image: "/projects/project3.png",
     tags: ["React.js", "TailwindCSS"],
-    demoUrl: "#",
+    demoUrl: "https://my-portfolio-website-six-omega.vercel.app/",
     githubUrl: "https://github.com/AhmedRIU/My_Portfolio_Website",
   },
 ];
