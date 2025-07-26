@@ -11,8 +11,8 @@ import { Footer } from "../components/Footer";
 export const Home = () => {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <ThemeToggle className="hidden md:block fixed top-5 right-5 z-50" />
       {/* Theme Toggle */}
-      <ThemeToggle />
       {/* Background Effects */}
       <StarBackground />
 

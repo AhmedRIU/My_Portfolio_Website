@@ -1,8 +1,9 @@
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import { cn } from "@/lib/utils";
 
-export const ThemeToggle = () => {
+export const ThemeToggle = ({ className }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -32,8 +33,8 @@ export const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       className={cn(
-        "fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
-        "focus:outlin-hidden"
+        "p-2 rounded-full transition-colors duration-300 bg-background shadow-md border border-border",
+        className
       )}
     >
       {isDarkMode ? (
@@ -43,4 +44,9 @@ export const ThemeToggle = () => {
       )}
     </button>
   );
+};
+
+// ✅ Fix: Prop validation
+ThemeToggle.propTypes = {
+  className: PropTypes.string,
 };

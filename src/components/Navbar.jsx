@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   { name: "Home", href: "#hero" },
@@ -28,7 +29,7 @@ export const Navbar = () => {
     <nav
       className={cn(
         "fixed z-40 w-full transition-all duration-300 md:top-4 md:left-1/2 md:-translate-x-1/2",
-        "md:w-[90%] lg:w-[98%] lg:max-w-7xl", // updated line here
+        "md:w-[90%] lg:w-[98%] lg:max-w-7xl",
         isScrolled
           ? "md:opacity-0 md:scale-95 md:pointer-events-none"
           : "md:opacity-100 md:scale-100",
@@ -61,14 +62,17 @@ export const Navbar = () => {
           ))}
         </div>
 
-        {/* Mobile Menu Toggle */}
-        <button
-          onClick={() => setIsMenuOpen((prev) => !prev)}
-          className="md:hidden p-2 text-foreground z-50"
-          aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile Right Controls */}
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle className="block md:hidden" />
+          <button
+            onClick={() => setIsMenuOpen((prev) => !prev)}
+            className="p-2 text-foreground z-50"
+            aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu Fullscreen */}
