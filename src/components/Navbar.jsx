@@ -34,7 +34,7 @@ export const Navbar = () => {
           ? "md:opacity-0 md:scale-95 md:pointer-events-none"
           : "md:opacity-100 md:scale-100",
         "md:transition-all md:duration-300",
-        "bg-background/80 backdrop-blur-md shadow-xs md:rounded-2xl md:border py-3"
+        "bg-background/80 backdrop-blur-md shadow-xs md:rounded-2xl md:border py-3",
       )}
     >
       <div className="container flex items-center justify-between px-4 md:px-6">
@@ -79,7 +79,7 @@ export const Navbar = () => {
       {isMenuOpen && (
         <div
           className={cn(
-            "fixed inset-0 h-screen w-screen bg-background/95 backdrop-blur-md z-30 flex flex-col items-center justify-center md:hidden transition-all duration-300"
+            "fixed inset-0 h-screen w-screen bg-background/95 backdrop-blur-md z-30 flex flex-col items-center justify-center md:hidden transition-all duration-300",
           )}
         >
           <div className="flex flex-col space-y-8 text-xl">

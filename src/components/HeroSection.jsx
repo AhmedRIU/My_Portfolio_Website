@@ -21,8 +21,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I build modern websites that look great and work well. I focus on
-            front-end design to make clean and easy-to-use interfaces.
+            I protect and manage systems by performing penetration testing, monitoring security alerts in SOC environments, maintaining infrastructure as a system engineer, and solving technical issues to ensure secure operations.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
