@@ -14,14 +14,34 @@ const skills = [
   { name: "Network Security", level: 80, category: "Networking" },
   { name: "Packet Analysis", level: 75, category: "Networking" },
   { name: "Wireshark", level: 70, category: "Networking" },
-  { name: "Nmap", level: 65, category: "Networking" },
-  { name: "Nessus & Nikto", level: 60, category: "Networking" },
+  {
+    name: "GNS3,EVE-NG,cisco Packet Tracer",
+    level: 65,
+    category: "Networking",
+  },
+  { name: "Nmap,Nessus & Nikto", level: 60, category: "Networking" },
 
   // Tools
-  { name: "Kali Linux,Parot OS,BlackArch Linux,Security Onion & CAINE", level: 90, category: "tools" },
-  { name: "Burp Suite,Metasploit,Hydra,OWASP ZAP & SQLMap", level: 70, category: "tools" },
-  { name: "Splunk,Wazuh,IBM QRadar,Microsoft Sentinel & ELK Stack", level: 85, category: "tools" },
-  { name: "Docker,Windows Server,Active Directory,Azure AD & VMware", level: 95, category: "tools" },
+  {
+    name: "Kali Linux,Parot OS,BlackArch Linux,Security Onion & CAINE",
+    level: 90,
+    category: "tools",
+  },
+  {
+    name: "Burp Suite,Metasploit,Hydra,OWASP ZAP & SQLMap",
+    level: 70,
+    category: "tools",
+  },
+  {
+    name: "Splunk,Wazuh,IBM QRadar,Microsoft Sentinel & ELK Stack",
+    level: 85,
+    category: "tools",
+  },
+  {
+    name: "Docker,Windows Server,Active Directory,Azure AD & VMware",
+    level: 95,
+    category: "tools",
+  },
 ];
 
 const categories = ["all", "Security", "Networking", "tools"];
@@ -30,7 +50,7 @@ export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
 
   const filteredSkills = skills.filter(
-    (skill) => activeCategory === "all" || skill.category === activeCategory
+    (skill) => activeCategory === "all" || skill.category === activeCategory,
   );
   return (
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
@@ -48,7 +68,7 @@ export const SkillsSection = () => {
                 "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-forefround hover:bd-secondary"
+                  : "bg-secondary/70 text-forefround hover:bd-secondary",
               )}
             >
               {category}

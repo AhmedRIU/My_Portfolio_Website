@@ -14,30 +14,47 @@ const projects = [
   {
     id: 1,
     title: "Appliances Landing Page",
-    description:
-      "A modern and user-friendly appliances website for browsing, comparing, and purchasing with confidence.",
     image: "/projects/Banner.png",
     tags: ["React", "TailwindCSS", "MongoDB"],
+    points: [
+      "Built a modern appliances landing page with a clean and user-friendly interface.",
+      "Designed responsive layouts for better viewing across mobile, tablet, and desktop screens.",
+      "Used React components to create a structured and reusable frontend.",
+      "Styled the website using Tailwind CSS for fast and consistent UI development.",
+      "Focused on smooth navigation and better user experience for product browsing.",
+    ],
     demoUrl: "https://github.com/AhmedRIU/Appliances_Website_Clone",
     githubUrl: "https://github.com/AhmedRIU/Appliances_Website_Clone",
   },
   {
     id: 2,
-    title: "Todo Web Application",
-    description:
-      "A sleek and efficient Todo web app for managing daily tasks with ease and clarity.",
-    image: "/projects/project2.png",
-    tags: ["JavaScript", "React.js"],
-    demoUrl: "https://github.com/AhmedRIU/TODO_List",
-    githubUrl: "https://github.com/AhmedRIU/TODO_List",
+    title: "Dummy Servers of NGTSOL",
+    image: "/projects/server.jpeg",
+    tags: ["VMware", "Windows Server", "Azure AD", "MS365"],
+    points: [
+      "I deployed NGTSOL dummy servers in VMware like DNS, DHCP, Proxy Server, VPN, WSUS, Print Server, and WDS.",
+      "Configured and managed core Windows Server services in a simulated enterprise environment.",
+      "Created and managed Active Directory users, groups, and organizational units (OUs).",
+      "Applied Group Policies to manage user access, system settings, and security controls.",
+      "Worked with Azure AD and Microsoft 365 for identity and user administration.",
+      "Built a domain-based lab environment to simulate real company infrastructure and workflows.",
+      "Documented configurations and practical tasks performed in the server lab environment.",
+    ],
+    demoUrl: "https://github.com/AhmedRIU/vmware-windows-server-lab",
+    githubUrl: "https://github.com/AhmedRIU/vmware-windows-server-lab",
   },
   {
     id: 3,
     title: "Portfolio Web Application",
-    description:
-      "Personal portfolio website showcasing projects with smooth navigation and responsive design.",
     image: "/projects/project3.png",
     tags: ["React.js", "TailwindCSS"],
+    points: [
+      "Built a personal portfolio website to showcase my projects, skills, and experience.",
+      "Designed a responsive layout for smooth viewing on all screen sizes.",
+      "Created interactive sections for projects, experience, and certifications.",
+      "Used React and Tailwind CSS to build a clean and professional UI.",
+      "Focused on simple navigation, accessibility, and performance improvements.",
+    ],
     demoUrl: "https://my-portfolio-website-six-omega.vercel.app/",
     githubUrl: "https://github.com/AhmedRIU/My_Portfolio_Website",
   },
@@ -119,32 +136,31 @@ const experiences = [
   },
 ];
 
-// image = preview image shown in card
-// pdfUrl = opens PDF on click
 const certifications = [
   {
     id: 1,
-    name: "Fortinet NSE 1",
-    issuer: "Fortinet",
+    name: "(ISC)2 Security CISSP (ISC2-CISSP) Badge",
+    issuer: "ISC2",
     date: "2025",
-    image: "/certifications/nse1-preview.png",
-    pdfUrl: "/certifications/nse1.pdf",
+    image: "/projects/isc2.png",
+    pdfUrl:
+      "https://www.credly.com/badges/c1bba970-e0fb-44ed-8a69-23bb0a39020b",
   },
   {
     id: 2,
-    name: "Fortinet NSE 2",
-    issuer: "Fortinet",
-    date: "2025",
-    image: "/certifications/nse2-preview.png",
-    pdfUrl: "/certifications/nse2.pdf",
+    name: "Certified Blue Team Practitioner (CBTP)",
+    issuer: "The SecOps Group (Creators of PentestingExams.com)",
+    date: "2026",
+    image: "/projects/cbtp.png",
+    pdfUrl: "/projects/cbtp.pdf",
   },
   {
     id: 3,
-    name: "TryHackMe Certificate",
-    issuer: "TryHackMe",
-    date: "2025",
-    image: "/certifications/tryhackme-preview.png",
-    pdfUrl: "/certifications/tryhackme.pdf",
+    name: "Introduction to Cloud Computing",
+    issuer: "IBM",
+    date: "2023",
+    image: "/projects/cc.png",
+    pdfUrl: "/projects/cc.pdf",
   },
   {
     id: 4,
@@ -431,9 +447,14 @@ export const ProjectsSection = () => {
                         {item.title}
                       </h3>
 
-                      <p className="text-muted-foreground text-sm mb-5 leading-7 text-center">
-                        {item.description}
-                      </p>
+                      <ul className="space-y-2 text-sm text-muted-foreground leading-6 flex-1 mb-5">
+                        {item.points.map((point, index) => (
+                          <li key={index} className="flex items-start gap-2">
+                            <span className="text-primary mt-1">•</span>
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
 
                       <div className="mt-auto flex justify-center items-center gap-4">
                         <a
