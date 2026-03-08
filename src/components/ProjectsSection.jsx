@@ -40,8 +40,8 @@ const projects = [
 
       "Prepared professional vulnerability assessment reports including findings, risk levels, proof of concept, and remediation recommendations.",
     ],
-    demoUrl: "https://github.com/AhmedRIU/Appliances_Website_Clone",
-    githubUrl: "https://github.com/AhmedRIU/Appliances_Website_Clone",
+    demoUrl: "https://www.zynexsolution.com/",
+    githubUrl: "https://www.zynexsolution.com/",
   },
   {
     id: 2,
