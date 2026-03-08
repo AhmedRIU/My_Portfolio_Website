@@ -137,14 +137,7 @@ const experiences = [
     duration: "Oct 2025 - Feb 2026",
     location: "Lahore, Pakistan (On-site)",
     image: "/projects/ngtsol.png",
-    tags: [
-      "VMware",
-      "Windows Server",
-      "Active Directory",
-      "Azure AD",
-      "M365",
-      "ServiceNow",
-    ],
+    tags: ["VMware", "Windows Server", "Active Directory", "Azure AD", "M365"],
     points: [
       "Built and managed a VMware-based enterprise lab environment.",
       "Deployed and configured ADC, CDC, and RODC servers for domain setup.",
