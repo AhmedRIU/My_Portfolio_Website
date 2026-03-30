@@ -183,7 +183,8 @@ const certifications = [
     issuer: "ISC2",
     date: "2025",
     image: "/projects/isc2.png",
-    pdfUrl: "/projects/isc2.pdf",
+    pdfUrl:
+      "https://www.credly.com/badges/c1bba970-e0fb-44ed-8a69-23bb0a39020b/public_url",
   },
   {
     id: 2,
@@ -191,7 +192,8 @@ const certifications = [
     issuer: "The SecOps Group (Creators of PentestingExams.com)",
     date: "2026",
     image: "/projects/cbtp.png",
-    pdfUrl: "/projects/cbtp.pdf",
+    pdfUrl:
+      "https://candidate.speedexam.net/certificate.aspx?SSTATE=am4131EniU8ntjp4bO5mXQCm9Z0W4Ql7cYcWUZSyomdBiGCDCHDOK+Bm+mMOVO3w1ttb2tpDv8d/FEP+lC3hxr7uZ0F0d72SqzqE2Jq+gGM=",
   },
   {
     id: 3,
@@ -207,7 +209,8 @@ const certifications = [
     issuer: "IBM",
     date: "2023",
     image: "/projects/cc.png",
-    pdfUrl: "/projects/cc.pdf",
+    pdfUrl:
+      "https://www.coursera.org/account/accomplishments/verify/8BCYRZRUXZBT",
   },
   {
     id: 5,
@@ -215,7 +218,8 @@ const certifications = [
     issuer: "EDUCBA",
     date: "2023",
     image: "/projects/itil4.png",
-    pdfUrl: "/projects/itil4.pdf",
+    pdfUrl:
+      "https://www.coursera.org/account/accomplishments/verify/Z2TSZOGPAAQ9",
   },
   {
     id: 6,
@@ -239,7 +243,8 @@ const certifications = [
     issuer: "Coursera",
     date: "2023",
     image: "/projects/linux.png",
-    pdfUrl: "/projects/linux.pdf",
+    pdfUrl:
+      "https://www.coursera.org/account/accomplishments/verify/SV9TPNZHQUCZ",
   },
   {
     id: 9,
@@ -255,7 +260,8 @@ const certifications = [
     issuer: "University of Colorado",
     date: "2023",
     image: "/projects/tcpip.png",
-    pdfUrl: "/projects/tcpip.pdf",
+    pdfUrl:
+      "https://www.coursera.org/account/accomplishments/verify/H6L4MVCLVJM8",
   },
   {
     id: 11,
@@ -263,7 +269,8 @@ const certifications = [
     issuer: "Learn Quest",
     date: "2023",
     image: "/projects/oracle.png",
-    pdfUrl: "/projects/oracle.pdf",
+    pdfUrl:
+      "https://www.coursera.org/account/accomplishments/verify/3WFEF5K3WYED",
   },
   {
     id: 12,
@@ -271,7 +278,8 @@ const certifications = [
     issuer: "Coursera",
     date: "2025",
     image: "/projects/imageseg.png",
-    pdfUrl: "/projects/imageseg.pdf",
+    pdfUrl:
+      "https://www.coursera.org/account/accomplishments/verify/XTWWPKWXYLZT",
   },
   {
     id: 13,
@@ -323,11 +331,12 @@ const certifications = [
   },
   {
     id: 19,
-    name: "Incident Response Basics",
-    issuer: "Training",
-    date: "2025",
-    image: "/projects/incident-response-preview.png",
-    pdfUrl: "/projects/incident-response.pdf",
+    name: "Technical Support Fundamentals",
+    issuer: "Google",
+    date: "2024",
+    image: "/projects/technicalsupport.png",
+    pdfUrl:
+      "https://www.coursera.org/account/accomplishments/verify/W8MRE7QYGS5X",
   },
   {
     id: 20,
@@ -335,7 +344,8 @@ const certifications = [
     issuer: "Google",
     date: "2023",
     image: "/projects/python.png",
-    pdfUrl: "/projects/python.pdf",
+    pdfUrl:
+      "https://www.coursera.org/account/accomplishments/verify/TLR8YFMCK3L2",
   },
   {
     id: 21,
@@ -343,7 +353,8 @@ const certifications = [
     issuer: "Coursera",
     date: "2023",
     image: "/projects/os.png",
-    pdfUrl: "/projects/os.pdf",
+    pdfUrl:
+      "https://www.coursera.org/account/accomplishments/verify/SXH6YLX7BUTN",
   },
 ];
 
